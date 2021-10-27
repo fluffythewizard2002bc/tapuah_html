@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.1 doc </title>
+    <style>
+        /*
+        .foo {
+  --widthA: 100px;
+  --widthB: calc(var(--widthA) / 2);
+  --widthC: calc(var(--widthB) / 2);
+  width: var(--widthC);
+}
+
+        */
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80vw;
+            height: 80vh;
+        }
+        .header {
+            background-color: orange;
+            text-align: center;
+            line-height: 5;
+            height: 100px;
+            margin: 5px 25%;
+        }
+        .side {
+            background-color: green;
+            display: inline-block;
+            margin: 1px 1px 1px 25%;
+            width:46px;
+            height: 140px;
+            background-size: cover;
+        }
+        .main {
+            background-color: purple;
+            text-align: right;
+            display: inline-block;
+            margin: 1px 25% 1px 1px;
+            width:184px;
+            height: 140px;  
+        }
+        .footer {
+            background-color: blue;
+            text-align: center;
+            line-height: 5;
+            margin: 5px 25%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box header">Header</div>
+        <div class="box side">side</div>
+        <div class="box main">main</div>
+        <div class="box footer">footer</div>
+    </div>
+</body>
+
+</html>
