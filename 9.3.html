@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.3 doc </title>
+    <style>
+        #one {
+            width: 100px;
+            height: 100px;
+            background: darkcyan;
+            margin: 50px;
+            position: relative;
+
+        }
+            /*Fixed by making the inner relative to the html*/
+        #two {
+            width: 80px;
+            height: 80px;
+            background: rgb(219, 198, 8);
+            position: absolute;
+            top: 50px;
+            left:50px;
+        }
+        #three {
+            width: 220px;
+            height: 50px;
+            background: rgb(41, 21, 223);
+            position: absolute;
+            top:50px;
+            margin-top: 80px;
+        }
+
+        #four {
+            width: 50px;
+            height: 200px;
+            background: rgb(223, 21, 189);
+            margin-left:180px;
+            position: absolute;
+            top: 2px;
+            left:-20px;
+         
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+    <div id="one">one
+        <div id="four">four</div>
+         <div id="two">two </div> 
+         <div id="three">three</div>    
+    </div>
+    
+    
+    
+    </div>
+</body>
+
+</html>
