@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>24.1 doc</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid {
+           
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 0.5rem;
+        }
+
+        .moo {
+            margin-top: 3rem;
+            margin-left:1rem;
+            margin-right:1rem;
+        
+
+        }
+
+        .item {
+            border-radius:0.5rem;
+            padding:2rem;
+        }
+
+        .one {
+            background-color: red;
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+        }
+
+        .two {
+            background-color: blue;
+            grid-column-start: 4;
+            grid-column-end: 7;
+        }
+
+        .three {
+            background-color: green;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .four {
+            background-color: purple;
+            grid-column-start: 3;
+            grid-column-end: 7;
+        }
+
+        .five {
+            background-color: yellow;
+            grid-column-start: 1;
+            grid-column-end: 7;
+        }
+    </style>
+</head>
+
+<body class="moo">
+    <div class="grid">
+        <div class="item one"></div>
+        <div class="item two"></div>
+        <div class="item three"></div>
+        <div class="item four"></div>
+        <div class="item five"></div>
+    </div>
+</body>
+
+</html>

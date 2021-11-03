@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>24.3 doc</title>
+    <style>
+        * {
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+
+
+        .grid {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 0.5rem;
+        }
+
+        /* Smartphones */
+        @media only screen and (max-width: 500px) {
+            body {
+                background: rgb(104, 113, 126);
+            }
+
+            .two {
+                background-color: blue;
+                grid-column: 1 /span 5;
+
+            }
+
+            .three {
+                background-color: green;
+                grid-column: 1 /span 5;
+            }
+
+            .four {
+                background-color: purple;
+                grid-column: 1 /span 5;
+
+            }
+
+            #smartphone h1 {
+                display: block;
+            }
+        }
+
+        /* Tablet */
+        @media(min-width: 501px) and (max-width: 768px) {
+            body {
+                background: rgb(110, 167, 241);
+            }
+
+            .two {
+                background-color: blue;
+                grid-column: 1 /span 1;
+
+            }
+
+            .three {
+                background-color: green;
+                grid-column-start: 2;
+                grid-column-end: 5;
+            }
+
+            .four {
+                background-color: purple;
+                grid-column-start: 1;
+                grid-column-end: 5;
+
+            }
+        }
+
+        /* Normal */
+        @media(min-width: 769px) {
+            body {
+                background: rgb(235, 117, 225);
+            }
+
+            .two {
+                background-color: blue;
+                grid-column: 1 /span 1;
+
+            }
+
+            .three {
+                background-color: green;
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+
+            .four {
+                background-color: purple;
+                grid-column-start: 4;
+                grid-column-end: 5;
+
+            }
+
+            #normal h1 {
+                display: block;
+            }
+        }
+
+
+        .moo {
+            margin-top: 3rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            width: 100vw;
+
+
+
+        }
+
+        .item {
+            border-radius: 0.5rem;
+            padding: 2rem;
+            height: 8rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        .one {
+            background-color: red;
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+        }
+
+        .five {
+            background-color: yellow;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+
+<body class="moo">
+    <div class="grid">
+        <div class="item one">
+            <h2>Header</h2>
+        </div>
+        <div class="item two">
+            <h2>Side Bar</h2>
+        </div>
+        <div class="item three">
+            <h2>Content</h2>
+            <div class="meh">
+                <p>More content than we had before so this column is quite tall.</p>
+            </div>
+        </div>
+        <div class="item four">
+            <h2>Side Bar2</h2>
+        </div>
+        <div class="item five">
+            <h2>Footer</h2>
+        </div>
+    </div>
+</body>
+
+</html>
