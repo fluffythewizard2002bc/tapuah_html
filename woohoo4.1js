@@ -1,0 +1,18 @@
+
+
+function sib() 
+{
+    
+    let numSiblings = parseInt(window.prompt('How maby siblings do you have?/n'));
+
+    if (numSiblings === 1) {
+        console.log('1 sibling!');
+    }
+    else if (numSiblings > 1) {
+        console.log('More than 1 sibling!');
+
+    } else {
+        console.log('No siblings');
+    }
+}
+sib();//8. === checks both value and type. '1' isn't === to 1. a conversion was needed.
