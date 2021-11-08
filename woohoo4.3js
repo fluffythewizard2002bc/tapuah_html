@@ -1,0 +1,48 @@
+/*
+John and Mike both play basketball in different teams.
+
+In the latest 3 games, 
+John's team scored 89, 120 and 103 points, 
+while Mike's team scored 116, 94 and 123 points.
+
+1. Calculate the average score for each team
+
+2. Decide which teams wins in average (highest average score), and print the 
+winner to the console. Also include the average score in the output.
+
+3. Then change the scores to show different winners. Don't forget to take into 
+account there might be a draw (the same average score)
+
+4. EXTRA: Mary also plays basketball, and her team scored 97, 134 and 105 
+points. Like before, log the average winner to the console. 
+
+5. Like before, change the scores to generate different winners, keeping in 
+mind there might be draws
+*/
+
+const teaMike = (116 + 94 + 123);
+const teamJohn = (89 + 120 + 103);
+const teaMary = (97+ 134+105);
+const max = Math.max(Math.max(teaMike, teamJohn), teaMary);
+
+if (teaMary > teaMike && teaMary > teamJohn) {
+    return console.log('Mary wins with avg score of teaMary ' + teaMary / 3);
+
+} else if (teaMary < teaMike && teaMike > teamJohn) {
+    return console.log('Mike wins with avg score of ' + teaMike / 3);
+
+}else if (teaMary < teamJohn && teamJohn > teaMike) {
+        return console.log("John wins with avg score of " + teaJohn/3);
+
+}else if (teamJohn === teaMary && teamJohn > teaMike) {
+    return console.log("Both Mary and John win with avg score of " + teaMary/3);
+
+}else if (teaMary === teaMike && teamJohn < teaMike) {
+    return console.log("Both Mike and Mary win with avg score of " + teaMike/3);
+
+}else if (teaMike === teamJohn && teamJohn > teaMary) {
+    return console.log("Both Mike and John win with avg score of " + teaMike/3);
+}else if (teaMike === teamJohn && teamJohn === teaMary) {
+    return console.log("EVERYBODY WINS!!! with avg score of " +teaMike/3);
+}
+
