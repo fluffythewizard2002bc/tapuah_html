@@ -1,0 +1,31 @@
+
+
+function percentageOfWorld1(population)
+{
+   
+
+    return  Math.round((population*100/7900 + Number.EPSILON) * 100) / 100;
+}
+
+let percentageOfWorld3=function(population){
+    return  Math.round((population*100/7900 + Number.EPSILON) * 100) / 100;
+}
+
+narnia=percentageOfWorld1(0);
+console.log(narnia);
+
+israel=percentageOfWorld1(7);
+console.log(israel);
+
+console.log( percentageOfWorld3(200) );
+
+narnia=percentageOfWorld1(0);
+console.log(narnia);
+
+israel=percentageOfWorld1(7);
+console.log(israel);
+
+
+console.log( percentageOfWorld3(200) );
+
+
