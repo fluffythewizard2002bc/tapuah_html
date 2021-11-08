@@ -1,0 +1,38 @@
+
+// From function declarations to explicit and implicit return functions (one of each).
+function welcome3() {
+    let welcome = 'Welcome to Appleseeds Bootcamp!';
+    return welcome;
+}
+const welcome_implicit=()=>'Welcome to Appleseeds Bootcamp!';
+//console.log(welcome_implicit());
+const welcome_explicit=()=>{ return 'Welcome to Appleseeds Bootcamp!'};
+//console.log( welcome_explicit());
+
+function power(a) {
+    let myNumber = a;
+    let result = Math.pow(myNumber, 2);
+    return result;
+}
+const power_implicit=(a)=> Math.pow(a, 2);
+//console.log( power_implicit(2));
+const power_explicit=(a)=> {return Math.pow(a, 2)};
+//console.log( power_implicit(2));
+
+// From function expressions to IIFE functions.
+const squareRoot = a => Math.sqrt(a);
+
+( function(a) { return Math.sqrt(a) } )(  );
+//console.log (( function(a){return Math.sqrt(a)})(9));
+
+( (a) => { return Math.sqrt(a) } )(  );
+//console.log(( (a) => { return Math.sqrt(a) } )(9));
+
+
+
+const randomNumbers = (a, b) => Math.random() * (a - b) + b;
+let a=5;//a=b
+((a,b)=>{return Math.random() * (a - b) + b})(a,a);
+//console.log(((a,b)=>{return Math.random() * (a - b) + b})(3,4));
+( function(a,b){return Math.random() * (a - b) + b} )(a,a);
+//console.log(( function(a,b){return Math.random() * (a - b) + b} )(2,3));
