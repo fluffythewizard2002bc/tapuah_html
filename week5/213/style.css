@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(218, 150, 197);
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.submitButton {
+    display: flex;
+    height: 150px;
+    width: 100px;
+    padding: 100px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 10px solid rgb(214, 56, 214);
+}
+
+.wordsQuantity {
+    font-size: 20rem;
+    color: rgb(238, 227, 70);
+    background-color: deeppink;
+}
+
+#textarea {
+    background-color: thistle;
+    border-radius: 10px;
+    border: 5px solid black;
+}
