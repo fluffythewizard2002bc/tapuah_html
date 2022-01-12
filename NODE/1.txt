@@ -1,0 +1,2 @@
+JS Browser has a Window, has a Document, has the ability to manipulate the DOM.
+JS NODE has a Global, has a Process, has the ability to access the File-System. 
